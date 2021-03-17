@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function max(n1, n2)
+		{
+			document.write("num1 : " + n1 + "<br />");
+			document.write("num2 : " + n2 + "<br />");
+			var max = (n1 >= n2) ? n1 : n2;
+			return max;
+		}
+
+		(function(n1) {
+			document.write("anony " + n1);
+		})(5);
+
+		numbering = function test() {
+			document.write("test function");
+		}
+
+		numbering();
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var user1 = {
+			name : 'eunwoo',
+			score : 90,
+			serial : '123123',
+			list : {
+				'list_1' : 10, 
+				'list_2' : 20,
+				'list_3' : 30,
+			},
+			show : function() {
+				document.write('name : ' + this.name + "<br />");
+				document.write('score : ' + this.score + "<br />");
+				document.write('serial : ' + this.serial + "<br />");
+				document.write('this : ' + this + "<br />");
+			}
+		};
+
+		user1['sh' + 'ow']();
+		for(var key in user1)
+		{
+			document.write("<li>key : " + key + ", value : " + user1[key] + "</li>");
+		}
+	</script>
+</body>
+</html>
