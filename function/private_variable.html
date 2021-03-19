@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function factory_movie(title) {
+		return {
+			get_title : function() {
+				return title;
+			},
+			set_title : function(_title) {
+				title = _title;
+			}
+		}
+	}
+	ghost = factory_movie("ghost");
+	matrix = factory_movie("maxtrix");
+</script>
+</body>
+</html>

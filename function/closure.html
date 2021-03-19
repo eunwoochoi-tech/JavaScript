@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var arr = [];
+	for(var i = 0; i < 5; i++)
+	{
+		arr[i] = function(id) {
+			return function() {
+				console.log(id);
+			}
+		}(i);
+	}
+
+	for(var idx in arr)
+	{
+		arr[idx]();
+	}
+</script>
+</body>
+</html>
