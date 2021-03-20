@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function sum() {
+			var i, sum = 0;
+			for(i = 0; i < arguments.length; i++)
+			{
+				sum += arguments[i];
+				document.write(i + ' : ' + arguments[i] + '<br />');
+			}
+			document.write("sum : " + sum);
+		}
+		sum(5, 4, 3);
+
+		function one(arg1)
+		{
+			console.log('one.length : ' + one.length);
+			console.log('arguments.length : ' + arguments.length);
+		}
+		one(1, 2, 3, 4, 5);
+	</script>
+</body>
+</html>
